@@ -1,0 +1,12 @@
+*{padding: 0;margin:0;box-sizing: border-box;}
+body{background-color: rgb(240, 243, 245);}
+.tela{width: 500px;height: 330px;background-color: #fff;display: flex;flex-direction: column;margin: 50px auto;text-align: center;padding: 20px;box-shadow: 0 0 1em blueviolet;}
+.tela label{font-size: 18px;}
+.tela input{width: 80%;padding:10px; border-radius: 10px;margin: 10px auto;border: 0; background-color: rgb(235, 235, 235);}
+.tela input[type='submit']{background-color: blueviolet;color:#fff;font-weight: bold;}
+
+/*corpo*/
+table{width: 50%; margin: 20px auto;}
+thead{ background-color: blueviolet;color:#fff}
+th{padding: 10px 0px;}
+td{padding: 10px 0px;}

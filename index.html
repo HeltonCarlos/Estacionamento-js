@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Estacionamento-JS</title>
+</head>
+<body>
+    <div class="tela">
+        <label>Nome do Cliente</label>
+        <input type="text" id="name" placeholder="Digite o nome do cliente">
+        <label>Modelo do Veículo</label>
+        <input type="text" id="marca" placeholder="Digite o modelo do veículo">
+        <label>Placa Do Veículo</label>
+        <input type="text" id="placa" placeholder="Digite a placa do veículo">
+        <input type="submit" id="enviar" value="Enviar">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Modelo</th>
+                <th>Placa</th>
+                <th>Horário</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="garage">
+            
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
