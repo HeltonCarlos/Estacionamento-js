@@ -1,4 +1,6 @@
 (function(){
+    
+
 
     function TabelasCar(car){
         const row = document.createElement("tr");
@@ -6,7 +8,9 @@
         <td>${car.name}</td>
         <td>${car.marca}</td>
         <td>${car.placa}</td>
-        <td>${car.time}</td>
+        <td>${new Date(car.time).
+          toLocaleString("pt-BR",{hour:"numeric",minute:"numeric"})}
+        </td>
         <td><button class="delete";>x</button></td>
         `
         document.querySelector("#garage").appendChild(row);
