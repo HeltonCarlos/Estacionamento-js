@@ -1,6 +1,9 @@
 (function(){
-    
 
+    function renderGarage(){
+      const garage=getGarage();
+      garage.forEach(c=> TabelasCar(c))
+    }
 
     function TabelasCar(car){
         const row = document.createElement("tr");
@@ -15,6 +18,8 @@
         `
         document.querySelector("#garage").appendChild(row);
     }
+    
+    const getGarage=()=>localStorage.garage ? JSON.parse(localStorage.garage):[];
 
   document.querySelector('#enviar').addEventListener('click',()=>{  
     const name=document.getElementById('name').value 
@@ -26,9 +31,10 @@
 
     const car= {name, marca, placa, time:new Date()}
 
-    const garage= localStorage.garage ? JSON.parse(localStorage.garage):[];
+    const garage= getGarage();
 
     garage.push(car);
+    renderGarage();
     TabelasCar(car);
 
     localStorage.garage = JSON.stringify(garage);
